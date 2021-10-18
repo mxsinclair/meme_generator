@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     //Need to add close button to the created meme
     let deleteMeme = document.createElement('div');
+    deleteMeme.classList.add('deletion')
     deleteMeme.innerText = "Delete Meme";
 
     //Need to add the created meme to my meme list
@@ -42,6 +43,15 @@ document.addEventListener('DOMContentLoaded', function(){
 
     })
 
+//Need to know when a meme has been selected for deletion and a function to delete memes
+
+function memeDeletion(event) {
+    event.target.parentNode.remove();
+}
+
+memeList.addEventListener('click', memeDeletion, false)
+
 })
 
-//Need a function to delete memes
+
+
