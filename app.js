@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function(){
     bottomTextContainer.innerText = document.getElementById('bottom-text');
 
     //Need to add close button to the created meme
+    let deleteMeme = document.createElement('div');
+    deleteMeme.innerText = "Delete Meme";
 
     //Need to add the image, top text, bottom text, and close button to the created meme
 
