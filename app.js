@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function(){
     createdMeme.classList.add('created-meme');
 
     //Need to create element for the image that is uploaded
+    let memeImgLocation = document.getElementById('meme-image').value;
+    let src = memeImgLocation;
+    let memeImg = document.createElement('img');
+    memeImg.src = memeImgLocation;
 
     //Need to create element to overlay text at the top
 
