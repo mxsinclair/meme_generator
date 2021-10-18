@@ -15,8 +15,12 @@ document.addEventListener('DOMContentLoaded', function(){
     memeImg.src = memeImgLocation;
 
     //Need to create element to overlay text at the top
+    let topTextContainer = document.createElement('div');
+    topTextContainer.innerText = document.getElementById('top-text');
 
     //Need to create element to overlay text at the bottom
+    let bottomTextContainer = document.createElement('div');
+    bottomTextContainer.innerText = document.getElementById('bottom-text');
 
     //Need to add close button to the created meme
 
